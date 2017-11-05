@@ -1,12 +1,12 @@
 # Linux Server Configuration
 
-I am deploying a flask application on to AWS Light Sail.  This document will give steps from creating instance to your application.  At the time when this document is written, the instance was ubuntu 16.04.30 LTS. Here is the final website link: [VenueFinder](http://52.15.239.207/)
+A flask application is being deployed on to AWS Light Sail. At the time when this document is written, the instance was ubuntu 16.04.30 LTS. Here is the final website link:(http://52.15.239.207/)
 
 IP address: 52.15.239.207
 Port: 2200
 
 
-Please view this [github](https://github.com/szasohel/restaurant_menu.git) to use the application
+Please view this (https://github.com/szasohel/restaurant_menu.git) to use the application
 
 To deploy a web app you have to go through these following steps:
 
@@ -228,8 +228,7 @@ oauth_flow = flow_from_clientsecrets('/var/www/catalog/restaurant_menu/client_se
 
 # Bibiliography
 
-1. [Setting Permissions for LightSail Pem file](http://unix.stackexchange.com/questions/115838/what-is-the-right-file-permission-for-a-pem-file-to-ssh-and-scp)
-2. [Abhishek Ghosh](https://github.com/ghoshabhi/P5-Linux-Config)
-3. [Oauth Error on apache2](https://discussions.udacity.com/t/oauth-error-on-apache2-linux-server/235498/7)
-4. [Steven Wooding](https://github.com/SteveWooding/fullstack-nanodegree-linux-server-config)
-5. [Flask Config](http://flask.pocoo.org/docs/0.12/config/)
+1. [Abhishek Ghosh](https://github.com/ghoshabhi/P5-Linux-Config)
+2. [Oauth Error on apache2](https://discussions.udacity.com/t/oauth-error-on-apache2-linux-server/235498/7)
+3. [Steven Wooding](https://github.com/SteveWooding/fullstack-nanodegree-linux-server-config)
+4. [Flask Config](http://flask.pocoo.org/docs/0.12/config/)
