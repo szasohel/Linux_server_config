@@ -1,8 +1,8 @@
 # Linux Server Configuration
 
-A flask application is being deployed on to AWS Light Sail. At the time when this document is written, the instance was ubuntu 16.04.30 LTS. Here is the final website link:(http://ec2-52-15-239-207.us-east-2.compute.amazonaws.com)
+A flask application is being deployed on to AWS Light Sail. At the time when this document is written, the instance was ubuntu 16.04.30 LTS. Here is the final website link:(http://ec2-18-221-113-246.us-east-2.compute.amazonaws.com)
 
-IP address: 52.15.239.207
+IP address: 18.221.113.246
 Port: 2200
 
 
@@ -41,9 +41,7 @@ We've created our new user, lets configure our ssh to non-default port
 
 ## Configuring SSH to a non-default port
 
-SSH default port is 22. We want to configure it to non default port.  Since we are using LightSail, we need to open the non default port through the web interface. If you don't do this step, you'll be locked out of the instance. Go to the networking tab on the management console. Then, the firewall option
-
-![LightSail firewall](/images/lightsailfirewall.png)
+SSH default port is 22. We want to configure it to non default port.  Since we are using LightSail, we need to open the non default port through the web interface. If you don't do this step, you'll be locked out of the instance. Go to the networking tab on the management console.
 
 Go into your sshd config file: `sudo nano /etc/ssh/sshd_config`
 Change the following options. # means commented out
@@ -207,7 +205,7 @@ Create an empty database called `catalog` with:
 
 Now we should run the `data.py` to create the database and populate the database initially. Note that inside these files your created engine should point to the new databse now :   
 ```
-engine = create_engine('postgresql://catalog:sayed@localhost/catalog')
+engine = create_engine('postgresql://catalog:catalog@localhost/catalog')
 ```
 
 The basic syntax of this statement is:   
@@ -216,9 +214,6 @@ The basic syntax of this statement is:
 postgresql://username:password@host:port/database
 
 In **_gconnect():_**
-
-app_token = json.loads(
-	open(r'/var/www/catalog/restaurant_menu/client_secret.json', 'r').read())['web']['client_id']
 
 CLIENT_ID = json.loads(
     open('/var/www/catalog/restaurant_menu/client_secret.json', 'r').read())['web']['client_id']
