@@ -1,6 +1,6 @@
 # Linux Server Configuration
 
-A flask application is being deployed on to AWS Light Sail. At the time when this document is written, the instance was ubuntu 16.04.30 LTS. Here is the final website link:(http://52.15.239.207/)
+A flask application is being deployed on to AWS Light Sail. At the time when this document is written, the instance was ubuntu 16.04.30 LTS. Here is the final website link:(http://ec2-52-15-239-207.us-east-2.compute.amazonaws.com)
 
 IP address: 52.15.239.207
 Port: 2200
